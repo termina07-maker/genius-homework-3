@@ -1,0 +1,46 @@
+.advantages-container {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+  padding: 0;
+
+ &__border {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  max-width: 316px;
+  border: 0px solid var(--color-primary-white);
+  background: var(--color-primary-white);
+  border-radius: 32px;
+  padding: 26px 32px;
+} 
+
+&__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+& li:first-child {
+  padding: 29px 38px 24px 26px;
+}
+
+&__text {
+   margin-bottom: 0;
+  line-height: 1.3;
+}
+
+&__icon {
+  fill: var(--color-primary-blue);
+}
+}
+
+
+
+
+
+
+
+

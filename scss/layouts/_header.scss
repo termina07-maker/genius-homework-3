@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  box-sizing: border-box;
+
+  &__container {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+    
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+  }
+
+  &__logo {
+    line-height: 1;
+    color: var(--color-primary-blue);
+    text-decoration: none;
+    font-family: 'Play';
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+
+  &__logo span {
+    display: block;
+  }
+
+  &__icons {
+    fill: var(--color-primary-dark);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+  }
+  // &__burger {
+  //   @media screen and (min-width: $bp-desktop) {
+  //     display: none;
+  //   }
+  // }
+}

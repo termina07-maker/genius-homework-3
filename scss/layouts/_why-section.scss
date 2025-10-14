@@ -1,0 +1,19 @@
+.why-section {
+  padding-bottom: 96px;
+  &__title {
+  color: var(--color-primary-dark);
+  margin-bottom: 48px;
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+&__title span {
+  display: block;
+}
+
+&__title .accent {
+  color: var(--color-primary-blue);
+}
+}

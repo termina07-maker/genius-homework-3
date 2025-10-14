@@ -1,0 +1,33 @@
+.procedures-section {
+
+&__procedures {
+  color: var(--color-primary-dark);
+  margin-bottom: 48px;
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+&__container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 16px;
+  padding: 0;
+}
+}
+
+
+
+
+
+

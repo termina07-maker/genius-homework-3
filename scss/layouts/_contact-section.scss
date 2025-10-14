@@ -1,0 +1,72 @@
+.contact-section {
+  padding-bottom: 96px;
+  padding-top: 0;
+
+
+  &__subtitle {
+text-align: center;
+transition-duration: 0.2s;
+  }
+
+  &__subtitle:hover {
+    color: var(--color-primary-blue);
+    cursor: pointer;
+  }
+
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__title {
+  color: var(--color-primary-dark);
+  margin-bottom: 48px;
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+&__title .text-brand {
+  color: var(--color-primary-blue);
+}
+
+&__map {
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
+&__block {
+  max-width: 423px;
+  width: 100%;
+  max-height: 481px;
+  height: 100%;
+  padding: 48px 56px;
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-white);
+  border-radius: 48px;
+  transition-property: background-color color;
+  transition-duration: 0.2s;
+}
+
+&__block p:first-child {
+  margin-bottom: 32px;
+}
+
+&__form-field {
+  margin-bottom: 16px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
