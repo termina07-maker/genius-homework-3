@@ -1,27 +1,33 @@
 .header {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
-  box-sizing: border-box;
+  @media screen and (min-width: 1280px) {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+  }
 
   &__container {
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 480px) {
+      padding: 32px 0;
+      display: flex;
+      // align-items: center;
+    }
   }
 
   &__menu {
     display: none;
+    @media screen and (min-width: 1280px) {
+      display: none;
       margin: 0;
       padding: 0;
       display: flex;
       gap: 56px;
       flex-grow: 1;
       justify-content: center;
-    
+    }
   }
 
   &__nav {
@@ -32,13 +38,24 @@
   }
 
   &__logo {
-    line-height: 1;
     color: var(--color-primary-blue);
+    font-size: 16px;
+    line-height: 1;
+    width: 57px;
+    height: 30px;
     text-decoration: none;
     font-family: 'Play';
     font-weight: 700;
-    font-size: 22px;
     text-transform: capitalize;
+    padding-left: 20px;
+    padding-top: 16px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 22px;
+      width: 74px;
+      height: 42px;
+      padding-top: 0;
+    }
   }
 
   &__logo span {
@@ -46,15 +63,28 @@
   }
 
   &__icons {
-    fill: var(--color-primary-dark);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    // gap: 32px;
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      fill: var(--color-primary-dark);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 32px;
+    }
   }
-  // &__burger {
-  //   @media screen and (min-width: $bp-desktop) {
-  //     display: none;
-  //   }
-  // }
+  &__burger {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+    background-color: transparent;
+    fill: var(--color-primary-white);
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
 }
